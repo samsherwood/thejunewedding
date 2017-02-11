@@ -45,9 +45,9 @@ body {
 }
 
 .site-header__logo {
-    position: absolute;
-    left: -4px;
-    top: -18px;
+    background-image: url("../images/thejunewedding-finally-green.svg");
+    background-position: 0 4px;
+    background-size: contain;
     z-index: 100;
 }
 
