@@ -192,6 +192,10 @@ body {
         color: white;
     }
 
+    .cta-button--secondary {
+        font-size: .75em;
+    }
+
 
 .venue {
     padding: 0 4em;
@@ -214,8 +218,37 @@ body {
         font-style: normal;
     }
 
+.venue__map {
+    position: relative;
+    max-height: 120px;
+    border: 1px solid rgb(1, 127, 61);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+    .venue__map img {
+        max-width: 100%;
+    }
+
+    .venue__map:after {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -.5em;
+        margin-left: -.5em;
+        width: 1em;
+        height: 1em;
+        border: 1px solid rgb(1, 127, 61);
+        border-radius: 50% 0 50% 50%;
+        transform: rotate(135deg);
+        background: rgb(1, 127, 61);
+        overflow: hidden;
+
+        content: " ";
+    }
+
 .venue__address {
-    font-size: 3em;
+    font-size: 2em;
     font-style: normal;
     font-weight: 200;
 }
