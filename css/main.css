@@ -31,6 +31,7 @@ body {
 }
 
 .site-header {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: flex-start; /* align items in Main Axis */
@@ -43,10 +44,22 @@ body {
     color: white;
 }
 
+.site-header__logo {
+    position: absolute;
+    left: -4px;
+    top: -18px;
+    z-index: 100;
+}
+
 @media(min-width: 30rem) {
     .site-header {
         flex: 1 1 25%;
         height: 100vh;
+    }
+
+    .site-header__logo {
+        left: -4px;
+        top: 0px;
     }
 }
 
@@ -113,11 +126,16 @@ body {
     justify-content: center;
     flex-direction: column;
     height: 90vh;
+    background-image: url("../images/thejunewedding-finally-corner-left.svg"), url("../images/thejunewedding-finally-corner-top-right.svg"), url("../images/thejunewedding-finally-corner-bottom-left.svg"), url("../images/thejunewedding-finally-corner-bottom-right.svg");
+    background-position: left top, right top, left bottom, right bottom;
+    background-repeat: no-repeat;
+    background-size: 200px;
 }
 
 @media(min-width: 30rem) {
     .site-container__section {
         font-size: .9em;
+        background-size: 300px;
     }
 }
 
