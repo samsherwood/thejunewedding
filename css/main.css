@@ -151,8 +151,10 @@ body {
 }
 
 .rsvp__header {
+    margin-bottom: 0;
     font-size: 2em;
     font-weight: 200;
+    line-height: 1em;
 }
 
     .rsvp__header em {
@@ -160,15 +162,16 @@ body {
         font-size: 2em;
         font-style: normal;
         font-weight: 200;
+        line-height: 1em;
     }
 
     .rsvp__date {
-        padding: 0 0 .25em 0;
+        padding: .2em 0 .25em 0;
         background-image: url("../images/date-up.svg"), url("../images/date-down.svg");
-        background-position: center .1em, center 1.25em;
+        background-position: center .16em, center 1.25em;
         background-size: .5em;
         background-repeat: no-repeat;
-        font-size: 3em;
+        font-size: 7.2em;
         font-weight: 200;
     }
 
@@ -263,9 +266,25 @@ body {
     text-align: center;
 }
 
-.lodging p {
-    font-size: 2.4em;
-}
+    .lodging__header {
+        font-size: 2em;
+        font-weight: 200;
+    }
+
+    .lodging p {
+        font-size: 2.4em;
+    }
+
+    .lodging small {
+        display: block;
+    }
+
+    .logding__logo {
+        display: inline-block;
+        margin: 2em;
+        max-width: 200px;
+        filter: grayscale(100%);
+    }
 
 
 .registry {
@@ -278,9 +297,9 @@ body {
         font-size: 2.4em;
     }
 
-        .registry small {
-            display: block;
-        }
+    .registry small {
+        display: block;
+    }
 
     .registry__logo {
         display: inline-block;
